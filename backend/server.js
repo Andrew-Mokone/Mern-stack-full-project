@@ -13,6 +13,7 @@ app.use(express.urlencoded({extended: false}));
 connectDB()
 
 app.use('/api/goals', require('../backend/routes/routesGoals'))
+app.use('/api/users', require('../backend/routes/userRoutes'))
 
 app.use(errorHandler)
 
